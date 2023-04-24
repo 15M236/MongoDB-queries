@@ -1,0 +1,37 @@
+
+Find all the topics and tasks which are thought in the month of October
+
+db.zenFsdDb.find({$month : "October" })
+
+Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
+
+db.companyData.find({$driversDate:{$gte: ISODate("2020-10-15"),$lt:ISODate("2020-10-31"}})
+
+Find all the company drives and students who are appeared for the placement.
+
+db.studentData.find({ $companies : true })
+
+Find the number of problems solved by the user in codekata
+
+db.studentData.count({ $queries : "solved"})
+
+Find all the mentors with who has the mentee's count more than 15
+
+12623
+
+16526
+
+
+
+Build Command - npm install
+
+Start Command - npm start
+
+    "username" : "onkar8197",
+    "password" : "Welcome1234"
+	
+	
+<Button onClick={()=>handleAddProduct(product)}>Add</Button> 
+
+
+<Button disabled onClick={()=>handleAddProduct(product)}>Add</Button> 
